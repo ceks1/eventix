@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventix - Online rezervacija događaja</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global */
+    * { box-sizing: border-box; margin:0; padding:0; font-family: 'Roboto', sans-serif; }
+    body { line-height: 1.6; color: #333; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Container */
+    .container { width: 90%; max-width: 1200px; margin: auto; }
+
+    /* Header / Hero */
+    header { 
+      background: linear-gradient(135deg, #6a0dad, #ff4aa3); 
+      color: #fff; 
+      text-align: center; 
+      padding: 100px 20px 60px;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 20px; }
+    header p { font-size: 1.2rem; margin-bottom: 30px; }
+    .btn-primary { background: #fff; color: #ff4aa3; padding: 15px 30px; font-weight: bold; border-radius: 5px; transition: 0.3s; }
+    .btn-primary:hover { background: #ffcee8; }
+
+    /* Sections */
+    section { padding: 80px 20px; }
+    section h2 { text-align: center; font-size: 2.5rem; margin-bottom: 40px; color: #6a0dad; }
+
+    /* How it works */
+    .steps { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; }
+    .step { background: #f8f8f8; padding: 20px; border-radius: 10px; flex: 1 1 250px; text-align: center; }
+    .step img { width: 80px; margin-bottom: 15px; }
+    .step h3 { margin-bottom: 10px; color: #6a0dad; }
+
+    /* Features / Value Proposition */
+    .features { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; }
+    .feature { background: #f8f8f8; padding: 30px; border-radius: 10px; flex: 1 1 250px; text-align: center; }
+    .feature img { width: 60px; margin-bottom: 15px; }
+    .feature h3 { margin-bottom: 10px; color: #6a0dad; }
+
+    /* Pricing */
+    .pricing { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .price-card { background: #f8f8f8; border-radius: 10px; padding: 30px; flex: 1 1 200px; text-align: center; border: 2px solid #6a0dad; transition: 0.3s; }
+    .price-card:hover { transform: scale(1.05); }
+    .price-card h3 { margin-bottom: 15px; color: #6a0dad; }
+    .price-card p { margin-bottom: 15px; font-size: 1.2rem; }
+    .price-card span { font-size: 1.5rem; font-weight: bold; color: #ff4aa3; }
+
+    /* Contact */
+    .contact-form { max-width: 600px; margin: auto; }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 15px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc; }
+    .contact-form button { background: #6a0dad; color: #fff; padding: 15px 30px; border-radius: 5px; font-weight: bold; transition: 0.3s; border: none; }
+    .contact-form button:hover { background: #ff4aa3; cursor: pointer; }
+
+    /* Footer */
+    footer { background: #333; color: #fff; text-align: center; padding: 40px 20px; }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .steps, .features, .pricing { flex-direction: column; align-items: center; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <div class="container">
+      <h1>Eventix – jedan klik do događaja</h1>
+      <p>Digitalna platforma za online rezervaciju i prodaju karata za sve vrste događaja.</p>
+      <a href="#pricing" class="btn-primary">Kreiraj događaj</a>
+    </div>
+  </header>
+
+  <!-- How it Works -->
+  <section id="how-it-works">
+    <div class="container">
+      <h2>Kako funkcioniše</h2>
+      <div class="steps">
+        <div class="step">
+          <img src="https://img.icons8.com/ios/100/6a0dad/create.png" alt="Create">
+          <h3>Kreiraj događaj</h3>
+          <p>Organizatori lako kreiraju događaj i postavljaju informacije i karte.</p>
+        </div>
+        <div class="step">
+          <img src="https://img.icons8.com/ios/100/6a0dad/ticket.png" alt="Tickets">
+          <h3>Rezerviši / kupi karte</h3>
+          <p>Korisnici pregledaju događaje i kupuju digitalne karte u nekoliko klikova.</p>
+        </div>
+        <div class="step">
+          <img src="https://img.icons8.com/ios/100/6a0dad/qr-code.png" alt="QR">
+          <h3>Digitalne karte</h3>
+          <p>Sve karte dolaze sa QR kodom za jednostavan ulazak na događaj.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features / Value Proposition -->
+  <section id="features">
+    <div class="container">
+      <h2>Prednosti Eventix-a</h2>
+      <div class="features">
+        <div class="feature">
+          <img src="https://img.icons8.com/ios/60/6a0dad/online-payment.png" alt="Online">
+          <h3>Jednostavna online prodaja</h3>
+          <p>Prodaja i rezervacija karata nikad nije bila jednostavnija.</p>
+        </div>
+        <div class="feature">
+          <img src="https://img.icons8.com/ios/60/6a0dad/qr-code.png" alt="QR">
+          <h3>Digitalne karte</h3>
+          <p>QR kodovi za siguran i brz ulazak na događaje.</p>
+        </div>
+        <div class="feature">
+          <img src="https://img.icons8.com/ios/60/6a0dad/calendar.png" alt="Central">
+          <h3>Centralizovana lista događaja</h3>
+          <p>Svi događaji na jednom mestu – pregledno i jednostavno.</p>
+        </div>
+        <div class="feature">
+          <img src="https://img.icons8.com/ios/60/6a0dad/time.png" alt="Time">
+          <h3>Ušteda vremena</h3>
+          <p>Organizatorima smanjuje administraciju i komplikacije.</p>
+        </div>
+        <div class="feature">
+          <img src="https://img.icons8.com/ios/60/6a0dad/shield.png" alt="Secure">
+          <h3>Sigurno i pregledno</h3>
+          <p>Kupovina karata je jednostavna i potpuno sigurna za korisnike.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing">
+    <div class="container">
+      <h2>Cene</h2>
+      <div class="pricing">
+        <div class="price-card">
+          <h3>Provizija po karti</h3>
+          <p>5–10% po prodatim kartama</p>
+        </div>
+        <div class="price-card">
+          <h3>Mesečna pretplata</h3>
+          <p>20–50 € za organizatore</p>
+        </div>
+        <div class="price-card">
+          <h3>Premium promocija</h3>
+          <p>10–50 € po događaju</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Kontakt</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Vaše ime" required>
+        <input type="email" placeholder="Vaš email" required>
+        <textarea rows="5" placeholder="Poruka" required></textarea>
+        <button type="submit">Pošalji</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Eventix. Sva prava zadržana.</p>
+  </footer>
+
+</body>
+</html>
